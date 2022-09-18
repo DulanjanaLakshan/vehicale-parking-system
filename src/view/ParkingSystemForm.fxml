@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ParkingSystemController">
+   <children>
+      <AnchorPane layoutY="-4.0" prefHeight="80.0" prefWidth="702.0" style="-fx-background-color: #23eae6;">
+         <children>
+            <ImageView fitHeight="48.0" fitWidth="56.0" layoutX="648.0" layoutY="17.0" onMouseClicked="#imgExitOnMouseClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/png-clipart-computer-icons-login-exit-miscellaneous-angle-thumbnail-removebg-preview.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children></AnchorPane>
+      <Label layoutX="14.0" layoutY="198.0" prefHeight="34.0" prefWidth="174.0" text="Select Vehicle :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="264.0" prefHeight="34.0" prefWidth="135.0" text="Vehicle Type :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="78.0" layoutY="326.0" prefHeight="34.0" prefWidth="72.0" text="Driver :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="8.0" layoutY="398.0" prefHeight="64.0" prefWidth="271.0" text="Your Parking Slot Number : " textFill="#030000">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtVehicleType" layoutX="150.0" layoutY="269.0" prefHeight="24.0" prefWidth="209.0" />
+      <JFXComboBox fx:id="cmbDriverLanguages" layoutX="150.0" layoutY="330.0" prefHeight="26.0" prefWidth="209.0" />
+      <TextField fx:id="lblSlotNumber" layoutX="258.0" layoutY="396.0" prefHeight="68.0" prefWidth="106.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" text="       ">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lblDate" layoutX="114.0" layoutY="116.0" prefHeight="64.0" prefWidth="209.0" style="-fx-background-color: #ffffff;" text="                  ">
+         <font>
+            <Font size="31.0" />
+         </font></Label>
+      <Label fx:id="lblTime" layoutX="377.0" layoutY="116.0" prefHeight="64.0" prefWidth="217.0" style="-fx-background-color: #ffffff;" text="             ">
+         <font>
+            <Font size="46.0" />
+         </font></Label>
+      <JFXButton fx:id="btnParkVehicle" buttonType="RAISED" layoutX="440.0" layoutY="196.0" onAction="#btnParkVehicleOnAction" prefHeight="73.0" prefWidth="247.0" ripplerFill="WHITE" style="-fx-background-color: #23eae6;" text="Park Vehicle" textFill="#320202">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnOnDeliveryShift" buttonType="RAISED" layoutX="440.0" layoutY="290.0" onAction="#btnOnDeliveryShiftOnAction" prefHeight="73.0" prefWidth="247.0" ripplerFill="WHITE" style="-fx-background-color: #23eae6;" text="On Delivery Shift" textFill="#170e0e">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="440.0" layoutY="387.0" onAction="#btnManagementLogInAction" prefHeight="73.0" prefWidth="247.0" style="-fx-background-color: #d72323;" text="Management Log In" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="228.0" layoutY="477.0" prefHeight="16.0" prefWidth="247.0" text="Designed By : Dulanjana Lakshan" />
+      <JFXComboBox fx:id="cmbVehicleLanguages" layoutX="150.0" layoutY="202.0" prefHeight="0.0" prefWidth="209.0" />
+      <TextField layoutX="104.0" layoutY="30.0" prefHeight="64.0" prefWidth="482.0" style="-fx-background-color: #000000;" />
+      <TextField layoutX="108.0" layoutY="34.0" prefHeight="56.0" prefWidth="475.0" style="-fx-background-color: #23eae6;">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </TextField>
+      <Label layoutX="142.0" layoutY="36.0" prefHeight="56.0" prefWidth="438.0" text="PARKING SYSTEM">
+         <font>
+            <Font size="46.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

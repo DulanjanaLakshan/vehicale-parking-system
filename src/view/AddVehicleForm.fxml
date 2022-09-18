@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddVehicleFormController">
+   <children>
+      <Label layoutX="29.0" layoutY="182.0" prefHeight="27.0" prefWidth="151.0" text="Vehicle Number :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="250.0" prefHeight="27.0" prefWidth="177.0" text="Maximum Weight :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="322.0" prefHeight="27.0" prefWidth="177.0" text="No of passengers :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtVehicleNumber" layoutX="182.0" layoutY="184.0" prefHeight="24.0" prefWidth="510.0" />
+      <JFXTextField fx:id="txtMaximumWeight" layoutX="182.0" layoutY="252.0" prefHeight="24.0" prefWidth="510.0" />
+      <JFXTextField fx:id="txtNoOfPassengers" layoutX="182.0" layoutY="326.0" prefHeight="24.0" prefWidth="510.0" />
+      <Label layoutX="358.0" layoutY="118.0" prefHeight="24.0" prefWidth="138.0" text="Vehicle Type :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbVehicleType" layoutX="498.0" layoutY="104.0" prefHeight="26.0" prefWidth="190.0" />
+      <JFXButton fx:id="btnAddVehicle" layoutX="508.0" layoutY="430.0" onAction="#btnAddVehicleOnAction" prefHeight="46.0" prefWidth="169.0" style="-fx-background-color: #a91d1d;" text="Add Vehicle" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="314.0" layoutY="432.0" onAction="#btnBackOnAction" prefHeight="42.0" prefWidth="151.0" style="-fx-background-color: #112f91;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <AnchorPane prefHeight="81.0" prefWidth="700.0" style="-fx-background-color: #23eae6;">
+         <children>
+            <Label layoutX="206.0" layoutY="13.0" prefHeight="56.0" prefWidth="270.0" text="Add Vehicle">
+               <font>
+                  <Font size="43.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

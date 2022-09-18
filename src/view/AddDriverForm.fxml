@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddDriverFormController">
+   <children>
+      <Label layoutX="50.0" layoutY="107.0" prefHeight="27.0" prefWidth="165.0" text="Driver Name :">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+      <Label layoutX="151.0" layoutY="176.0" prefHeight="27.0" prefWidth="68.0" text="NIC :">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="239.0" prefHeight="27.0" prefWidth="199.0" text="Driving License No :">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <Label layoutX="101.0" layoutY="304.0" prefHeight="27.0" prefWidth="108.0" text="Address :">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+      <Label layoutX="85.0" layoutY="401.0" prefHeight="27.0" prefWidth="140.0" text="Contact No :">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <JFXTextField fx:id="txtDriverName" layoutX="220.0" layoutY="108.0" prefHeight="24.0" prefWidth="470.0" />
+      <JFXTextField fx:id="txtNic" layoutX="220.0" layoutY="176.0" prefHeight="24.0" prefWidth="470.0" />
+      <JFXTextField fx:id="txtLicenseNumber" layoutX="220.0" layoutY="240.0" prefHeight="24.0" prefWidth="470.0" />
+      <JFXTextField fx:id="txtAddress" layoutX="220.0" layoutY="302.0" prefHeight="24.0" prefWidth="470.0" />
+      <JFXTextField layoutX="221.0" layoutY="342.0" prefHeight="24.0" prefWidth="470.0" />
+      <JFXTextField fx:id="txtContactNumber" layoutX="223.0" layoutY="401.0" prefHeight="24.0" prefWidth="470.0" />
+      <JFXButton layoutX="469.0" layoutY="445.0" onAction="#AddDriverOnAction" prefHeight="41.0" prefWidth="210.0" style="-fx-background-color: #ff0000;" text="Add  Driver" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton layoutX="304.0" layoutY="445.0" onAction="#btnBackOnAction" prefHeight="42.0" prefWidth="140.0" style="-fx-background-color: #112f91;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <AnchorPane prefHeight="75.0" prefWidth="700.0" style="-fx-background-color: #23eae6;">
+         <children>
+            <Label layoutX="233.0" layoutY="14.0" prefHeight="44.0" prefWidth="218.0" text="Add Driver">
+               <font>
+                  <Font size="39.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.WelcomePageFormController">
+   <children>
+      <AnchorPane prefHeight="346.0" prefWidth="700.0" style="-fx-background-color: #6fc2d0;">
+         <children>
+            <Label layoutX="241.0" layoutY="5.0" prefHeight="75.0" prefWidth="211.0" text="Hello!" textFill="WHITE">
+               <font>
+                  <Font size="61.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="299.0" prefHeight="43.0" prefWidth="651.0" text="Welcome To The Saman Rice's Vehicle Parking System">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="227.0" fitWidth="298.0" layoutX="227.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/WhatsApp_Image_2021-07-21_at_12.36.13-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="346.0" prefHeight="154.0" prefWidth="700.0" style="-fx-background-color: #f6f6f6;">
+         <children>
+            <JFXButton layoutX="519.0" layoutY="50.0" onAction="#btnContinueOnAction" prefHeight="35.0" prefWidth="165.0" style="-fx-background-color: #e60000;" text="Continue &gt;&gt;" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label layoutX="308.0" layoutY="57.0" prefHeight="26.0" prefWidth="211.0" text="To Move Forward :">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="448.0" layoutY="132.0" prefHeight="16.0" prefWidth="250.0" text="Designed By : Dulanjana Lakshan" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
