@@ -4,11 +4,6 @@ import controller.AddVehicleFormController;
 
 import java.sql.SQLOutput;
 
-/**
- * @author : D.D.Sandaruwan <dulanjayasandaruwan1998@gmail.com>
- * @Since : 2021-07-18
- **/
-
 public class Vehicle {
 
     public String vehicleType;

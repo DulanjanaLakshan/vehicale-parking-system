@@ -10,10 +10,6 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.net.URL;
 
-/**
- * @author : D.D.Sandaruwan <dulanjayasandaruwan1998@gmail.com>
- * @Since : 2021-07-21
- **/
 public class WelcomePageFormController {
     public AnchorPane root;
 

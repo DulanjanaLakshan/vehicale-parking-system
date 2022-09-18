@@ -1,7 +1,3 @@
-/**
- * @author : D.D.Sandaruwan <dulanjayasandaruwan1998@gmail.com>
- * @Since : 2021-07-17
- **/
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

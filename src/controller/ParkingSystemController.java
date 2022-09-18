@@ -27,10 +27,7 @@ import java.net.URL;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-/**
- * @author : D.D.Sandaruwan <dulanjayasandaruwan1998@gmail.com>
- * @Since : 2021-07-17
- **/
+
 
 public class ParkingSystemController {
 

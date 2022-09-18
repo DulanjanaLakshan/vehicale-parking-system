@@ -1,9 +1,5 @@
 package tableModel;
 
-/**
- * @author : D.D.Sandaruwan <dulanjayasandaruwan1998@gmail.com>
- * @Since : 2021-07-19
- **/
 public class VehicleOnDeliveryShiftTM {
     private String vehicleNumber;
     private String vehicleType;
